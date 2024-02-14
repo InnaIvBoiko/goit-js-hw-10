@@ -41,7 +41,7 @@ startBtn.addEventListener('click', () => {
             messageColor: '#fff',
             messageSize: '18px',
             backgroundColor: '#ef4040',
-            iconUrl: '../img/error.svg',
+            iconUrl: './img/error.svg',
             position: 'topRight',
             close: false,
             timeout: 3000
