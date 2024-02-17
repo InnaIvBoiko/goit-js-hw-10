@@ -136,17 +136,23 @@ form {
   padding-top: 36px;
   padding-left: 156px;
 }
-
-label {
+form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 360px;
-  height: 40px;
+  height: 72px;
 }
+
 input {
   box-sizing: border-box;
-  /* display: block; */
   border: 1px solid #808080;
   border-radius: 4px;
   transition: border-color 250ms linear;
+}
+
+form label input {
+  height: 40px;
 }
 
 fieldset {
@@ -156,7 +162,7 @@ fieldset {
   height: 78px;
   border: 1px solid #808080;
   border-radius: 4px;
-  padding: 18px 48px 8px 48px;
+  padding: 14px 48px 12px 48px;
   margin-bottom: 24px;
   margin-top: 16px;
   transition: border-color 250ms linear;
@@ -169,7 +175,9 @@ fieldset:hover {
 
 fieldset label {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 8px;
   width: 104px;
   height: 32px;
